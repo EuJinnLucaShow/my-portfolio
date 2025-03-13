@@ -52,11 +52,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Front-end / Web Developer | Full Stack Developer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I
-      craft intuitive
+      I'm Yevhenii Lukashov, a Full Stack Developer at{" "}
+      <InlineCode>Freelancer</InlineCode>, where I craft intuitive
       <br /> user experiences. After hours, I build my own projects.
     </>
   ),
@@ -82,10 +82,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for
-        transforming complex challenges into simple, elegant design solutions.
-        Her work spans digital interfaces, interactive experiences, and the
-        convergence of design and technology.
+        🎓 Always learning!
+        <br />I am actively enhancing my JavaScript expertise by developing an
+        e-commerce platform with the MERN stack, while simultaneously advancing
+        my English language proficiency through structured online courses.
       </>
     ),
   },

@@ -1,12 +1,10 @@
 import { Flex } from "@/once-ui/components";
 import MasonryGrid from "@/components/gallery/MasonryGrid";
-import { baseURL } from "@/app/resources";
 import { gallery, person } from "@/app/resources/content";
 
 export async function generateMetadata() {
   const title = gallery.title;
   const description = gallery.description;
-  const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
 
   return {
     title,
@@ -15,10 +13,8 @@ export async function generateMetadata() {
       title,
       description,
       type: "website",
-      url: `https://${baseURL}/gallery`,
       images: [
         {
-          url: ogImage,
           alt: title,
         },
       ],
@@ -27,7 +23,6 @@ export async function generateMetadata() {
       card: "summary_large_image",
       title,
       description,
-      images: [ogImage],
     },
   };
 }
@@ -44,10 +39,10 @@ export default function Gallery() {
             "@type": "ImageGallery",
             name: gallery.title,
             description: gallery.description,
-            url: `https://${baseURL}/gallery`,
+
             image: gallery.images.map((image) => ({
               "@type": "ImageObject",
-              url: `${baseURL}${image.src}`,
+
               description: image.alt,
             })),
             author: {
@@ -55,7 +50,6 @@ export default function Gallery() {
               name: person.name,
               image: {
                 "@type": "ImageObject",
-                url: `${baseURL}${person.avatar}`,
               },
             },
           }),

@@ -1,5 +1,3 @@
-const baseURL = "";
-
 const routes = {
   "/": true,
   "/about": true,
@@ -106,4 +104,4 @@ const mailchimp = {
   },
 };
 
-export { routes, protectedRoutes, effects, style, display, mailchimp, baseURL };
+export { routes, protectedRoutes, effects, style, display, mailchimp };

@@ -6,7 +6,6 @@ export {
   style,
   display,
   mailchimp,
-  baseURL,
 } from "@/app/resources/config";
 export {
   person,

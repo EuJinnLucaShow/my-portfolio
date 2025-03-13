@@ -4,7 +4,7 @@ import "@/once-ui/tokens/index.scss";
 import classNames from "classnames";
 
 import { Footer, Header, RouteGuard } from "@/components";
-import { baseURL, effects, style } from "@/app/resources";
+import { effects, style } from "@/app/resources";
 
 import { Inter } from "next/font/google";
 import { Source_Code_Pro } from "next/font/google";
@@ -14,13 +14,11 @@ import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
 
 export async function generateMetadata() {
   return {
-    metadataBase: new URL(`https://${baseURL}`),
     title: home.title,
     description: home.description,
     openGraph: {
       title: `${person.firstName}'s Portfolio`,
       description: "Portfolio website showcasing my work.",
-      url: baseURL,
       siteName: `${person.firstName}'s Portfolio`,
       locale: "en_US",
       type: "website",
@@ -87,11 +85,17 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         primary.variable,
         secondary ? secondary.variable : "",
         tertiary ? tertiary.variable : "",
-        code.variable,
+        code.variable
       )}
     >
       <ToastProvider>
-        <Column style={{ minHeight: "100vh" }} as="body" fillWidth margin="0" padding="0">
+        <Column
+          style={{ minHeight: "100vh" }}
+          as="body"
+          fillWidth
+          margin="0"
+          padding="0"
+        >
           <Background
             mask={{
               cursor: effects.mask.cursor,
