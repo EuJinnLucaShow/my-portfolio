@@ -39,7 +39,7 @@ const Heading = <T extends ElementType = "h1">({
   className,
   ...props
 }: HeadingProps<T>) => {
-  const Component = as || "h1";
+  const Component = as ?? "h1";
 
   if (variant && (size || weight)) {
     console.warn("When 'variant' is set, 'size' and 'weight' are ignored.");
@@ -47,7 +47,7 @@ const Heading = <T extends ElementType = "h1">({
 
   if (onBackground && onSolid) {
     console.warn(
-      "You cannot use both 'onBackground' and 'onSolid' props simultaneously. Only one will be applied.",
+      "You cannot use both 'onBackground' and 'onSolid' props simultaneously. Only one will be applied."
     );
   }
 
@@ -59,18 +59,26 @@ const Heading = <T extends ElementType = "h1">({
   const sizeClass = size ? `font-${size}` : "font-m";
   const weightClass = weight ? `font-${weight}` : "font-strong";
 
-  const classes = variant ? getVariantClasses(variant) : [sizeClass, weightClass];
+  const classes = variant
+    ? getVariantClasses(variant)
+    : [sizeClass, weightClass];
 
   let colorClass = "neutral-on-background-strong";
   if (onBackground) {
-    const [scheme, weight] = onBackground.split("-") as [ColorScheme, ColorWeight];
+    const [scheme, weight] = onBackground.split("-") as [
+      ColorScheme,
+      ColorWeight
+    ];
     colorClass = `${scheme}-on-background-${weight}`;
   } else if (onSolid) {
     const [scheme, weight] = onSolid.split("-") as [ColorScheme, ColorWeight];
     colorClass = `${scheme}-on-solid-${weight}`;
   }
 
-  const generateClassName = (prefix: string, token: SpacingToken | undefined) => {
+  const generateClassName = (
+    prefix: string,
+    token: SpacingToken | undefined
+  ) => {
     return token ? `${prefix}-${token}` : undefined;
   };
 
@@ -91,7 +99,7 @@ const Heading = <T extends ElementType = "h1">({
     generateClassName("mt", marginTop),
     generateClassName("mb", marginBottom),
     generateClassName("mx", marginX),
-    generateClassName("my", marginY),
+    generateClassName("my", marginY)
   );
 
   return (
