@@ -8,8 +8,8 @@ const person = {
   },
   role: "Front-end / Web Developer | Full Stack Developer | MERN Stack Developer | JavaScript Developer",
   avatar: "/images/avatar.jpg",
-  location: "Europe/Kyiv", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Ukrainian", "Russian"], // optional: Leave the array empty if you don't want to display languages
+  location: "Europe/Kyiv",
+  languages: ["English", "Ukrainian", "Russian"],
 };
 
 const newsletter = {
@@ -24,8 +24,6 @@ const newsletter = {
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
@@ -52,7 +50,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Front-end / Web Developer | Full Stack Developer</>,
+  headline: <>Full Stack Developer</>,
   subline: (
     <>
       I'm Yevhenii Lukashov, a Full Stack Developer at{" "}
@@ -90,7 +88,7 @@ const about = {
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
@@ -108,7 +106,6 @@ const about = {
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
             alt: "Once UI Project",
@@ -136,7 +133,7 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
@@ -150,7 +147,7 @@ const about = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
@@ -158,7 +155,6 @@ const about = {
         description: (
           <>Able to prototype in Figma with Once UI with unnatural speed.</>
         ),
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-02.jpg",

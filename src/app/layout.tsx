@@ -6,8 +6,7 @@ import classNames from "classnames";
 import { Footer, Header, RouteGuard } from "@/components";
 import { effects, style } from "@/app/resources";
 
-import { Inter } from "next/font/google";
-import { Source_Code_Pro } from "next/font/google";
+import { Inter, Source_Code_Pro } from "next/font/google";
 
 import { person, home } from "@/app/resources/content";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
@@ -15,6 +14,7 @@ import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
 export async function generateMetadata() {
   return {
     title: home.title,
+    icons: "/favicon.ico",
     description: home.description,
     openGraph: {
       title: `${person.firstName}'s Portfolio`,
