@@ -54,7 +54,7 @@ const home = {
   subline: (
     <>
       I'm Yevhenii Lukashov, a Full Stack Developer at{" "}
-      <InlineCode>Freelancer</InlineCode>, where I craft intuitive
+      <InlineCode>TEAMCHALLENGE</InlineCode>, where I craft intuitive
       <br /> user experiences. After hours, I build my own projects.
     </>
   ),
@@ -81,6 +81,7 @@ const about = {
     description: (
       <>
         🎓 Always learning!
+        <br />
         <br />I am actively enhancing my JavaScript expertise by developing an
         e-commerce platform with the MERN stack, while simultaneously advancing
         my English language proficiency through structured online courses.
@@ -92,13 +93,13 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "TEAMCHALLENGE",
+        timeframe: "2023 - Present",
+        role: "Front-end / Web Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20%
-            increase in user engagement and 30% faster load times.
+            Redesigned the UI/UX for the TEAMCHALLENGE platform, resulting in a
+            20% increase in user engagement and 30% faster load times.
           </>,
           <>
             Spearheaded the integration of AI tools into design workflows,
@@ -107,7 +108,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/cover-01.png",
             alt: "Once UI Project",
             width: 16,
             height: 9,
