@@ -63,7 +63,7 @@ const code = Source_Code_Pro({
 });
 
 interface RootLayoutProps {
-  children: React.ReactNode;
+  readonly children: React.ReactNode;
 }
 
 export default async function RootLayout({ children }: RootLayoutProps) {
@@ -134,8 +134,8 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             grid={{
               display: effects.grid.display,
               color: effects.grid.color,
-              width: effects.grid.width as any,
-              height: effects.grid.height as any,
+              width: effects.grid.width,
+              height: effects.grid.height,
               opacity: effects.grid.opacity as any,
             }}
             lines={{
