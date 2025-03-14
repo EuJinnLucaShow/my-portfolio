@@ -53,9 +53,10 @@ const home = {
   headline: <>Full Stack Developer</>,
   subline: (
     <>
-      I'm Yevhenii Lukashov, a Full Stack Developer at{" "}
-      <InlineCode>TEAMCHALLENGE</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      My name is Yevhenii Lukashov, and I'm a Full Stack Developer at{" "}
+      <InlineCode>TEAMCHALLENGE</InlineCode>. I'm passionate about building
+      intuitive interfaces that simplify users' lives. In my free time, I enjoy
+      working on my own projects, where I can bring my ideas to life.
     </>
   ),
 };
@@ -98,8 +99,9 @@ const about = {
         role: "Front-end / Web Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the TEAMCHALLENGE platform, resulting in a
-            20% increase in user engagement and 30% faster load times.
+            Implemented a UI/UX redesign of the HyggeHome online store,
+            resulting in a 20% increase in customer engagement and 30% faster
+            page load times.
           </>,
           <>
             Spearheaded the integration of AI tools into design workflows,
