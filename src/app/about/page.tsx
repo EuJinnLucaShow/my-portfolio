@@ -72,7 +72,7 @@ export default function About() {
             description: about.intro.description,
 
             sameAs: social
-              .filter((item) => item.link && !item.link.startsWith("mailto:")) // Filter out empty links and email links
+              .filter((item) => item.link && !item.link.startsWith("mailto:"))
               .map((item) => item.link),
             worksFor: {
               "@type": "Organization",
@@ -344,7 +344,7 @@ export default function About() {
               </Heading>
               <Column fillWidth gap="l">
                 {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill}-${index}`} fillWidth gap="4">
+                  <Column key={`${skill.title}-${index}`} fillWidth gap="4">
                     <Text variant="heading-strong-l">{skill.title}</Text>
                     <Text variant="body-default-m" onBackground="neutral-weak">
                       {skill.description}
