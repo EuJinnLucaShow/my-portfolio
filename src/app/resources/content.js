@@ -138,12 +138,14 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
+        name: "GoIT Computer school in Kyiv",
         description: <>Studied software engineering.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Udemy: Online Courses",
+        description: (
+          <>Studied online HTML, CSS, JavaScript, React, NPM, Node.js, DOM</>
+        ),
       },
     ],
   },
