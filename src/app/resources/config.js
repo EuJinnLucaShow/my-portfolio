@@ -64,7 +64,6 @@ const display = {
 };
 
 const mailchimp = {
-  action: "",
   effects: {
     mask: {
       cursor: false,
