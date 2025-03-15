@@ -147,8 +147,6 @@ export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
           display: "flex",
           justifyContent: "center",
         }}
-        action={mailchimp.action}
-        method="post"
         id="mc-embedded-subscribe-form"
         name="mc-embedded-subscribe-form"
       >
